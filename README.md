@@ -116,9 +116,14 @@ navigation bar and pages styling.
 ### Adding Bootstrap to our page
 To save time and not to write custom css(scss) we can add bootstrap to our project.
 To add a bootstrap 4 ruby on rails needs to be version 6 or higher. 
-We can install it by using this command:
+We can install it by using this command (we will also need jquery for bootstrap and popper.js to fully work):
 ```
-yarn add bootstrap
+yarn add bootstrap jquery popper.js
+```
+
+After installing something we always want to re-bundle the app:
+```
+bundle install
 ```
 
 To use bootstrap we want to import it into `/app/javascript/packs/application.js`
