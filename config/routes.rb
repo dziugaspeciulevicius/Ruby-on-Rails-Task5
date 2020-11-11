@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get '/home/index'
   get '/home/about'
+  get '/home/memes'
   get '/home/services'
   get '/home/contact'
 

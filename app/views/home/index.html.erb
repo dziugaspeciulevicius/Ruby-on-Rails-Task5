@@ -1,7 +1,34 @@
 <div class="index-page">
-  <h1 class="home-header">Welcome to our programming blog</h1>
-  <p>This is our first static ruby on rails page. It seems fun.</p>
-  <div class="images-row">
-    <img src="https://data.whicdn.com/images/342876776/original.jpg" alt="img" width="400" height="400">
-  </div>
+  <h1 class="home-header">Welcome to our meme blog</h1>
+  <p>This is our first static ruby on rails page. </p>
+  <p>Enter your credit card information here to access funniest memes you'll ever see!. </p>
+
+  <!-- Rounded switch -->
+  <label class="switch">
+    <input type="checkbox" id="togBtn" onclick="myFunction()">
+      <div class="slider round">
+        <!--ADDED HTML -->
+        <span class="on">PAID</span>
+        <span class="off">NOT PAID</span>
+        <!--END-->
+    </div>
+    <br/>
+    <br/>
+    <div id="text" style="display:none">You now have access to our meme tab</div>
+
+  </label>
+
 </div>
+<script>
+    function myFunction() {
+        var checkBox = document.getElementById("togBtn");
+        var text = document.getElementById("text");
+        if (checkBox.checked == true){
+            text.style.display = "block";
+        } else {
+            text.style.display = "none";
+
+        }
+    }
+
+</script>
