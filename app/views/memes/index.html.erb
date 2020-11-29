@@ -13,7 +13,8 @@
   <tbody>
     <% @memes.each do |meme| %>
       <tr>
-        <td><%= meme.meme_url %></td>
+      
+        <td> <img src="<%= meme.meme_url %>" alt="img" height="200" /> </td>
         <td><%= link_to 'Show', meme %></td>
         <td><%= link_to 'Edit', edit_meme_path(meme) %></td>
         <td><%= link_to 'Destroy', meme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
