@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  resources :memes
   get '/home/index'
-  # get '/home/about'
   get '/home/memes'
   get '/home/services'
   get '/home/contact'
+  get '/memes/new'
+  get '/home/memes'
 
   root to: 'home#index'
 
